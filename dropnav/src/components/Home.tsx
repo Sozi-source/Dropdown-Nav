@@ -14,7 +14,7 @@ function Home() {
           {/* Logo */}
           <img src="/src/assets/images/logo.svg" alt="logo" className='w-12 h-6'/>
           {/* Dropdown Menu */}
-          <select name="Feature" id="">
+          <select name="Feature" id="" className='text-sm sm:text-base'>
           <option value="">Features</option>
           <option value="">Todo List</option>
           <option value="">Calender</option>
@@ -22,14 +22,14 @@ function Home() {
           <option value="">Planning</option>
         </select>
 
-         <select name="Company" id="">
+         <select name="Company" id="" className='text-sm sm:text-base'>
           <option value="">Company</option>
           <option value="">History</option>
           <option value="">Our Team</option>
           <option value="">Blog</option>
         </select>
 
-        <ul className='flex gap-4 mr-24'>
+        <ul className='flex gap-2 sm:gap-4 text-sm sm:text-base'>
           <li><a href="">Career</a></li>
           <li><a href="">About</a></li>
         </ul>
@@ -37,15 +37,15 @@ function Home() {
         </div>
       
       {/* Other links */}
-        <ul className='flex gap-4'>
+        <ul className='flex gap-2 sm:gap-4 ml-auto mr-4 sm:mr-24 text-sm sm:text-base'>
           <li><a href="">Login</a></li>
           <li><a href="">Register</a></li>
         </ul>
         
       </nav>
 
-      <main className='relative flex justify-between items-center p-4 w-full'>
-        <div className='flex flex-col gap-4 w-1/2 max-w-[400px] p-5 ml-20'>
+      <main className='relative flex flex-col-reverse lg:flex-row justify-between items-center p-4 w-full gap-8'>
+        <div className='flex flex-wrap gap-2 sm:gap-4 items-center ml-4 sm:ml-24 w-full lg:w-1/2 '>
           <h1 className='text-5xl font-extrabold'>Make remote work</h1>
           <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
           <button className='flex start-0 bg-black rounded-md w-25 text-white p-2'>Learn more</button>
@@ -60,7 +60,7 @@ function Home() {
         </div>      
 
         <div className='w-1/2 '>
-          <img src={heroImage} alt="heroImage" className='w-[350px] h-[400px] -mt-12'/>
+          <img src={heroImage} alt="heroImage" className='w-[300px] h-[400px]'/>
         </div>
       </main>
     </div>
